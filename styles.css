@@ -199,7 +199,6 @@ header{
     height: 85px;
     width: auto;
     position: initial;
-    border:initial;
   }
   .navbar__link {
     transition: none;
