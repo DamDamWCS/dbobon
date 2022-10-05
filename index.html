@@ -3,30 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles.css" />
+   
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DBobon</title>
   </head>
 
   <body>
+
     <header>
       <div class="logo">
         <img class="imgLogo" src="assets/logo.svg" alt="logo du site" />
         <div class="titleLogo"><h2>DBOBON</h2></div>
       </div>
       <div class="titleSite">DBOBON</div>
-      <div class="menu">
-        <nav>
-          <a id="link" href="#"><span id="burger"></span></a>
-          <ul class="list-unstyled">
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Formation</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="navbar">
+        <ul class="navbar__links">
+          <li class="navbar__link first"><a href="#">Home</a></li>
+          <li class="navbar__link second"><a href="#">Réalisation</a></li>
+          <li class="navbar__link third"><a href="#">Missions</a></li>
+          <li class="navbar__link four"><a href="#">Portfolio</a></li>
+        </ul>
+        <button class="burger">
+          <span class="bar"></span>
+        </button>
+      </nav>
+
     </header>
     <main></main>
     <footer></footer>
+    <script src="script.js"></script>
   </body>
 </html>
