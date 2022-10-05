@@ -11,30 +11,45 @@
   margin: 0px;
   outline: none;
 }
+header{
+  height: 95px;
+}
+.boxShadow {
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  background: #ffffff;
+}
 
 .navbar__links {
-    overflow: hidden;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 0;
-  height: calc(100vh - 85px);
+  height: 266px;
+  /* height: calc(100vh - 85px); */
   position: absolute;
-  top: 85px;
-  right: 0; 
+  top: 95px;
+  right: 0;
   transform: translateX(110%);
   transition: all 0.5s ease-in-out;
   padding-inline-start: 0;
   list-style: none;
   font-family: "Amarante";
-} 
+  background-color: white;
+  /* border: 1px solid #797b7d; */
+}
 .navbar__link {
   transform: translateX(101%);
-  transition: all 0.5s ease-in-out; 
+  transition: all 0.5s ease-in-out;
   display: block;
   width: 100%;
   text-align: center;
-} 
+
+}
 
 .show-nav .navbar__links {
   width: 100vw;
@@ -48,16 +63,16 @@
   display: block;
   padding: 1rem;
   font-size: 1.6rem;
-  color: black;
   text-decoration: none;
   color: #797b7d;
+
 }
 .navbar__link > a:hover {
   background-color: #1ab7ee;
+  border: 1px solid #1391e1;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   color: white;
   border-radius: 3px;
-  border: 1px solid #1391e1;
 }
 /* Toggle menu */
 .burger {
@@ -113,14 +128,7 @@
   transform: rotate(-45deg);
 }
 
-header {
-  height: 85px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
-  background: #ffffff;
-}
+
 /* Animations */
 .show-nav .first {
   transition: all 1s ease-out;
@@ -182,30 +190,34 @@ header {
   ul {
     list-style: none;
     list-style-type: initial;
-
-    /* margin-block-start: initial;
-    margin-block-end: initial;
-    margin-inline-start: initial;
-    margin-inline-end: initial; */
-    padding-inline-start: initial;
   }
   .navbar__links {
     display: flex;
     flex-direction: row;
     justify-content: center;
     transform: none;
-    width: initial;
     height: 85px;
     width: auto;
-    border: 1px solid black;
     position: initial;
+    border:initial;
   }
   .navbar__link {
-    padding: 0 10px;
+    transition: none;
     transform: none;
   }
   .navbar__link > a {
-    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     text-decoration: none;
+    height: 85px;
+  }
+  .navbar__link > a:hover {
+    background-color: #1ab7ee;
+    border: 1px solid #1391e1;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 5px;
   }
 }
