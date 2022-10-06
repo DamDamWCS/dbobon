@@ -1,0 +1,222 @@
+@font-face {
+  font-family: "AkayaTelivigala";
+  src: url("assets/Akaya_Telivigala/AkayaTelivigala-Regular.ttf");
+}
+@font-face {
+  font-family: "Amarante";
+  src: url("assets/Amarante/Amarante-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  outline: none;
+}
+header{
+  height: 95px;
+}
+.boxShadow {
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  background: #ffffff;
+}
+
+.navbar__links {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 0;
+  height: 266px;
+  /* height: calc(100vh - 85px); */
+  position: absolute;
+  top: 95px;
+  right: 0;
+  transform: translateX(110%);
+  transition: all 0.5s ease-in-out;
+  padding-inline-start: 0;
+  list-style: none;
+  font-family: "Amarante";
+  background-color: white;
+  /* border: 1px solid #797b7d; */
+}
+.navbar__link {
+  transform: translateX(101%);
+  transition: all 0.5s ease-in-out;
+  display: block;
+  width: 100%;
+  text-align: center;
+
+}
+
+.show-nav .navbar__links {
+  width: 100vw;
+  transform: translateX(0);
+}
+
+.show-nav .navbar__link {
+  transform: translateX(0);
+}
+.navbar__link > a {
+  display: block;
+  padding: 1rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #797b7d;
+
+}
+.navbar__link > a:hover {
+  background-color: #1ab7ee;
+  border: 1px solid #1391e1;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 3px;
+}
+/* Toggle menu */
+.burger {
+  display: block;
+  position: relative;
+  padding: 0;
+  width: 45px;
+  height: 45px;
+  border: none;
+  margin-right: 20px;
+
+  background: transparent;
+  cursor: pointer;
+}
+/* BAR du burger */
+
+.bar {
+  display: block;
+  width: 45px;
+  height: 4px;
+  border-radius: 3px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  background: #484d53;
+  transition: all 0.5s ease-in-out;
+}
+.bar::before,
+.bar::after {
+  content: "";
+  width: 45px;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  background: #484d53;
+  border-radius: 3px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease-in-out;
+}
+
+.bar::before {
+  transform: translateY(-12px);
+}
+.bar::after {
+  transform: translateY(12px);
+}
+.show-nav .bar {
+  width: 0;
+  background: transparent;
+}
+.show-nav .bar::before {
+  transform: rotate(45deg);
+}
+.show-nav .bar::after {
+  transform: rotate(-45deg);
+}
+
+
+/* Animations */
+.show-nav .first {
+  transition: all 1s ease-out;
+}
+.show-nav .second {
+  transition: all 1.1s ease-out;
+}
+.show-nav .third {
+  transition: all 1.2s ease-out;
+}
+.show-nav .four {
+  transition: all 1.3s ease-out;
+}
+
+.titleSite {
+  color: #484d53;
+  font-family: "AkayaTelivigala";
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+.titleLogo {
+  display: none;
+}
+.logo {
+  height: 100%;
+  width: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-top-right-radius: 15px;
+  border-end-end-radius: 15px;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+  background: #484d53;
+  border-color: #000000;
+}
+.imgLogo {
+  filter: invert(53%) sepia(33%) saturate(5154%) hue-rotate(344deg)
+    brightness(100%) contrast(102%) drop-shadow(0px 5px 5px rgb(0 0 0));
+}
+/* SCREEN LARGE */
+@media screen and (min-width: 600px) {
+  .logo {
+    min-width: 200px;
+    justify-content: space-evenly;
+  }
+  .titleLogo {
+    display: initial;
+    font-family: "AkayaTelivigala";
+    color: #ffffff;
+  }
+  .titleSite {
+    display: none;
+  }
+  .burger {
+    display: none;
+  }
+  ul {
+    list-style: none;
+    list-style-type: initial;
+  }
+  .navbar__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transform: none;
+    height: 85px;
+    width: auto;
+    position: initial;
+  }
+  .navbar__link {
+    transition: none;
+    transform: none;
+  }
+  .navbar__link > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    height: 85px;
+  }
+  .navbar__link > a:hover {
+    background-color: #1ab7ee;
+    border: 1px solid #1391e1;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 5px;
+  }
+}
