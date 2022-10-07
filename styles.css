@@ -206,14 +206,17 @@ main{
     list-style: none;
     list-style-type: initial;
   }
+
   .navbar__links {
     display: flex;
     flex-direction: row;
     justify-content: center;
     transform: none;
-    height: 85px;
+    height: 95px; /*hauteur du header pour la visu de l'effet box-shadow*/
     width: auto;
     position: initial;
+    padding :0px 5px; 
+
   }
   .navbar__link {
     transition: none;
@@ -233,5 +236,6 @@ main{
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
     color: white;
     border-radius: 5px;
+
   }
 }
