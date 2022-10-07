@@ -45,14 +45,15 @@ main{
   height: 266px;
   /* height: calc(100vh - 85px); */
   position: absolute;
-  top: 95px;
+  top: 94px; /*Décalage d'un pixel à cause de l'apercu mobile
+   pour ne pas avoir de texte apparent entre le header et le menu déplié*/
   right: 0;
   transform: translateX(110%);
   transition: all 0.5s ease-in-out;
   padding-inline-start: 0;
   list-style: none;
   font-family: "Amarante";
-  background-color: white;
+
   /* border: 1px solid #797b7d; */
 }
 .navbar__link {
@@ -67,6 +68,7 @@ main{
 .show-nav .navbar__links {
   width: 100vw;
   transform: translateX(0);
+  background-color: white;
 }
 
 .show-nav .navbar__link {
