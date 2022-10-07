@@ -19,8 +19,8 @@ header{
 }
 header.show-nav {
   background-color: #ffffff; 
-  /*Color le header en blanc quand le burger est déplié pour le pas avoir de trou entre
-   le header et le menu pour le box shadow du header */
+  /*Color le header en blanc quand le burger est déplié pour ne pas avoir de trou 
+  transparent entre le header et la nav et voir le box shadow du header */
 }
 main{
   margin: top;
@@ -186,7 +186,7 @@ main{
     brightness(100%) contrast(102%) drop-shadow(0px 5px 5px rgb(0 0 0));
 }
 /* SCREEN LARGE */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 735px) {
   .logo {
     min-width: 200px;
     justify-content: space-evenly;
