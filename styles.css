@@ -11,18 +11,18 @@
   margin: 0px;
   outline: none;
 }
-header{
+header {
   height: 95px;
   position: sticky;
   left: 0px;
   top: 0px;
 }
 header.show-nav {
-  background-color: #ffffff; 
-  /*Color le header en blanc quand le burger est déplié pour ne pas avoir de trou 
+  background-color: #ffffff;
+  /*Color le header en blanc quand le burger est déplié pour ne pas avoir de trou
   transparent entre le header et la nav et voir le box shadow du header */
 }
-main{
+main {
   margin: top;
 }
 .boxShadowBotom {
@@ -32,27 +32,24 @@ main{
   align-items: center;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
   background-color: #ffffff;
-
-
 }
 
 .navbar__links {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 0;
+
+  width: 0%;
   height: 266px;
   /* height: calc(100vh - 85px); */
   position: absolute;
   top: 94px; /*Décalage d'un pixel à cause de l'apercu mobile
    pour ne pas avoir de texte apparent entre le header et le menu déplié*/
   right: 0;
-  transform: translateX(110%);
+  transform: translateX(101%);
   transition: all 0.5s ease-in-out;
   padding-inline-start: 0;
   list-style: none;
-  font-family: "Amarante";
 
   /* border: 1px solid #797b7d; */
 }
@@ -62,7 +59,10 @@ main{
   display: block;
   width: 100%;
   text-align: center;
-
+  font-family: "Amarante";
+  font-size: 18px;
+  font-style: bold;
+  color: #484d53;
 }
 
 .show-nav .navbar__links {
@@ -80,7 +80,6 @@ main{
   font-size: 1.6rem;
   text-decoration: none;
   color: #797b7d;
-
 }
 .navbar__link > a:hover {
   background-color: #1ab7ee;
@@ -143,7 +142,6 @@ main{
   transform: rotate(-45deg);
 }
 
-
 /* Animations */
 .show-nav .first {
   transition: all 1s ease-out;
@@ -182,6 +180,7 @@ main{
   border-color: #000000;
 }
 .imgLogo {
+  /*Modification du logo SVG pour la coleur orange et l'application d'un drop shadow*/
   filter: invert(53%) sepia(33%) saturate(5154%) hue-rotate(344deg)
     brightness(100%) contrast(102%) drop-shadow(0px 5px 5px rgb(0 0 0));
 }
@@ -194,6 +193,8 @@ main{
   .titleLogo {
     display: initial;
     font-family: "AkayaTelivigala";
+    font-weight: bold;
+    font-size: 24px;
     color: #ffffff;
   }
   .titleSite {
@@ -215,8 +216,7 @@ main{
     height: 95px; /*hauteur du header pour la visu de l'effet box-shadow*/
     width: auto;
     position: initial;
-    padding :0px 5px; 
-
+    padding: 0px 5px;
   }
   .navbar__link {
     transition: none;
@@ -236,6 +236,5 @@ main{
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
     color: white;
     border-radius: 5px;
-
   }
 }

@@ -3,16 +3,15 @@ function toggleMenu () {
     const burger = document.querySelector('.burger');
     const header = document.querySelector('header');
     
-    burger.addEventListener('click', (e) => {    
+    // burger.addEventListener('click', (e) => {    
+    //   navbar.classList.toggle('show-nav');
+    //   header.classList.toggle('show-nav');
+    // });    
+    burger.addEventListener('click',function() {    
       navbar.classList.toggle('show-nav');
       header.classList.toggle('show-nav');
     });    
-    // const navbarLinks = document.querySelectorAll('.navbar a');
-    // navbarLinks.forEach(link => {
-    //   link.addEventListener('click', (e) => {    
-    //     navbar.classList.toggle('show-nav');
-    //   }); 
-    // })
      
   }
   toggleMenu();
+
