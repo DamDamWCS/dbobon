@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: "Amarante";
-  src: url("assets/Amarante/Amarante-Regular.ttf");
+  src: url("assets/Amaranth/Amaranth-Regular.ttf");
 }
 * {
   box-sizing: border-box;
@@ -40,7 +40,7 @@ main {
   flex-direction: column;
 
   width: 0%;
-  height: 266px;
+  height: 234px;
   /* height: calc(100vh - 85px); */
   position: absolute;
   top: 94px; /*Décalage d'un pixel à cause de l'apercu mobile
@@ -55,13 +55,12 @@ main {
 }
 .navbar__link {
   transform: translateX(101%);
-  transition: all 0.5s ease-in-out;
   display: block;
   width: 100%;
   text-align: center;
   font-family: "Amarante";
-  font-size: 18px;
-  font-style: bold;
+  font-size: 1.2rem;
+  font-weight: bold;
   color: #484d53;
 }
 
@@ -77,10 +76,11 @@ main {
 .navbar__link > a {
   display: block;
   padding: 1rem;
-  font-size: 1.6rem;
+  font-family: "Amarante";
   text-decoration: none;
   color: #797b7d;
 }
+
 .navbar__link > a:hover {
   background-color: #1ab7ee;
   border: 1px solid #1391e1;
@@ -96,8 +96,6 @@ main {
   width: 95px;
   height: 45px;
   border: none;
-  /* margin-right: 20px; */
-
   background: transparent;
   cursor: pointer;
 }
@@ -164,7 +162,6 @@ main {
   font-weight: bold;
   font-size: 24px;
   text-align: center;
-
 }
 .titleLogo {
   display: none;
@@ -188,7 +185,7 @@ main {
     brightness(100%) contrast(102%) drop-shadow(0px 5px 5px rgb(0 0 0));
 }
 /* SCREEN LARGE */
-@media screen and (min-width: 735px) {
+@media screen and (min-width: 745px) {
   .logo {
     min-width: 200px;
     justify-content: space-evenly;
@@ -217,14 +214,16 @@ main {
     justify-content: center;
     align-items: center;
     transform: none;
+    /* transition: none; */
     height: 95px; /*hauteur du header pour la visu de l'effet box-shadow*/
-    width: auto;
+    width: 560px;
     position: initial;
     padding: 0px 5px;
   }
   .navbar__link {
     transition: none;
     transform: none;
+    /* padding-left: 40px; */
   }
   .navbar__link > a {
     display: flex;
@@ -234,6 +233,7 @@ main {
     text-decoration: none;
     height: 85px;
   }
+
   .navbar__link > a:hover {
     background-color: #1ab7ee;
     border: 1px solid #1391e1;
