@@ -41,12 +41,11 @@ h1{
   padding: 55px 0;
 }
 
-
-.imgProfil{
-width: 100%;
-height: auto;
-
+.imgArticle > img {
+  width: 100%;
+  height: auto;
 }
+
 
 
 .boxShadowBotom {
@@ -274,5 +273,6 @@ height: auto;
 flex-direction: initial;
 justify-content: space-evenly;
   }
+
 
 }
