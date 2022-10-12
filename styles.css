@@ -66,7 +66,7 @@ main {
 }
 
 .show-nav .navbar__links {
-  width: 100vw;
+  width: 100%;
   transform: translateX(0);
   background-color: white;
 }
@@ -93,10 +93,10 @@ main {
   display: block;
   position: relative;
   padding: 0;
-  width: 45px;
+  width: 95px;
   height: 45px;
   border: none;
-  margin-right: 20px;
+  /* margin-right: 20px; */
 
   background: transparent;
   cursor: pointer;
@@ -107,6 +107,7 @@ main {
   display: block;
   width: 45px;
   height: 4px;
+  margin: 0 auto;
   border-radius: 3px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
   background: #484d53;
@@ -118,7 +119,8 @@ main {
   width: 45px;
   height: 4px;
   position: absolute;
-  left: 0;
+  margin: 0 auto;
+  left: 25px;
   background: #484d53;
   border-radius: 3px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
@@ -162,6 +164,7 @@ main {
   font-weight: bold;
   font-size: 24px;
   text-align: center;
+
 }
 .titleLogo {
   display: none;
@@ -212,6 +215,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     transform: none;
     height: 95px; /*hauteur du header pour la visu de l'effet box-shadow*/
     width: auto;
@@ -226,7 +230,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    white-space: nowrap;
     text-decoration: none;
     height: 85px;
   }
