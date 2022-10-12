@@ -240,7 +240,7 @@ height: auto;
     transform: none;
     /* transition: none; */
     height: 95px; /*hauteur du header pour la visu de l'effet box-shadow*/
-    width: 560px;
+    width: 100%;
     position: initial;
     padding: 0px 5px;
   }
