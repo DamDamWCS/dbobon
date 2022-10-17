@@ -329,6 +329,5 @@ main {
   .contnairTextImg {
     flex-direction: initial;
     justify-content: space-evenly;
-    align-items: initial;
   }
 }
