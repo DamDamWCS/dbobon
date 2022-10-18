@@ -36,6 +36,9 @@ padding: 55px 10px;
 section:nth-child(1n+2) {
   background-color: #F9F9F9;
  }
+ article{
+  padding-bottom: 75px;
+ }
 
 .contnairTextImg {
   display: flex;
