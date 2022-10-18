@@ -82,7 +82,44 @@ h2 {
   border: 1px solid #606060;
   max-width: 700px;
 }
+.contnairCV{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+ .imgArticleCV{
+height: 800px;
+width: 100%;
+object-fit: cover;
+  border-radius: 1%;
+  border: 1px solid #606060;
 
+} 
+a.CV {
+  text-decoration: initial;
+  color: white;
+}
+button.CV:hover{
+  background: #1391e1;
+}
+button.CV{
+  width: 173px;
+	height: 32px;
+	padding: 0px 10px 0px 10px;
+	background: #0b6cd4;
+	color: #ffffff;
+	border-color: #000000;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 3px 3px 3px 3px;
+	font-family: "Helvetica";
+	font-weight: 400;
+	font-size: 14px;
+	text-align: center;
+}
+article.CV{
+  text-align: center;
+}
 .boxShadowBotom {
   height: 85px;
   display: flex;
@@ -250,6 +287,13 @@ h2 {
   background-color: #7a7a7a;
   margin: 0 auto;
 }
+.separatorFooter {
+  display: block;
+  width: 200px;
+  height: 1px;
+  background-color: #747475;
+  margin: 0 auto;
+}
 .separatorSection {
   display: block;
   width: 100%;
@@ -258,6 +302,35 @@ h2 {
   margin: 0 ;
   padding: 0;
 }
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 280px;
+  background-color: #484d53;
+}
+div.btnSocial{
+width: 300px;
+text-align: center;
+}
+img.btnSocial {
+  filter: invert(50%) sepia(11%) saturate(5%) hue-rotate(127deg) brightness(88%) contrast(94%);
+  height: 32px;
+  padding:0 10px;
+}
+.copyrightText{
+  color:#747475;
+  font-weight: #747475;
+}
+.paddingFooter{
+  margin: 5px 0;
+}
+.copyrightText{
+  font-weight: bold;
+  font-family: "SourceSansPro";
+}
+
 /* SCREEN LARGE */
 @media screen and (min-width: 745px) {
   .logo {
