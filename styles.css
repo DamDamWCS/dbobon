@@ -456,10 +456,13 @@ img.btnSocial:hover {
   }
   .descriptionArticle {
     max-width: 40%;
-    padding-left: 15px;
+    padding:0 15px;
   }
   .contnairTextImg {
     flex-direction: initial;
     justify-content: space-evenly;
+  }
+  .contnairTextImg:nth-child(2n+1){
+    flex-direction: row-reverse;
   }
 }
