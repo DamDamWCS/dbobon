@@ -41,7 +41,6 @@
               <img
                 src="assets/coding-man.jpg"
                 alt="Un homme qui code"
-                srcset=""
               />
             </div>
             <div class="descriptionArticle">
@@ -153,7 +152,7 @@
               />
             </div>
             <div class="descriptionArticle">
-              <h2 class="h2LargeScreen">Tel Ext PDL</h2>
+              <h2 class="h2LargeScreen">The Kingdom of Kolchis</h2>
               <p class="pArticle">
                 <b>Pr BOBON : Grand Directeur Developpeur WEB</b>
                 <br />
@@ -189,54 +188,70 @@
               />
             </div>
           </div>
-          <button class="CV">
-            <a href="assets/CV 1.6.2 SNCF.pdf" class="CV">Télecharger en PDF</a>
-          </button>
+          <a href="assets/CV 1.6.2 SNCF.pdf" class="CV">
+            <button class="CV">Télecharger en PDF</button></a
+          >
         </article>
       </section>
       <div class="separatorSection"></div>
       <section class="contact">
         <article>
           <h1>Contact</h1>
+          <p class="pArticle">Démarrons un projet ensemble, n'hesitez pas à me contacter</p>
 
-          <form id="contactForm">
-            <label for="name">Name :</label>
+          <form class="contactForm">
             <br />
-            <input type="text" id="name" name="name" value="Votre nom" />
+            <input type="text" id="name" name="name" class="boxForm" placeholder="Votre nom" />
             <br />
             <br />
-            <label for="email">Email :</label><br />
             <input
               type="email"
+              class="boxForm"
               id="email"
               name="email"
-              value="votre-email@exemple.com"
+              placeholder="votre-email@exemple.com"
             />
             <br />
             <br />
-
-            <label for="message">Message:</label><br />
-            <textarea id="message" name="message"></textarea>
+            <textarea id="message" name="message" class="boxForm" placeholder="Votre message" ></textarea>
             <br />
             <br />
-            <div id="submitContact">
-              <input type="submit" value="Submit" />
+            <div class="">
+              <input type="submit" value="Envoyer" class="submitContact" />
             </div>
           </form>
         </article>
       </section>
+      <div class="separatorSectionLast"></div>
     </main>
     <footer>
-
-      <div class="btnSocial paddingFooter">
-        <img src="assets/logo/linkedin-logo-svgrepo-com.svg" class="btnSocial" alt="logo de GitHub" >
-        <img src="assets/logo/email-svgrepo-com.svg" class="btnSocial" alt="logo de GitHub" >
-        <img src="assets/logo/github-icon.svg" class="btnSocial" alt="logo de GitHub" >
+      <div class="btnSocial marginFooter">
+        <a href="https://www.linkedin.com/in/damien-bobon-063482179/"
+          ><img
+            src="assets/logo/linkedin-logo-svgrepo-com.svg"
+            class="btnSocial"
+            alt="logo de linkedin"
+        /></a>
+        <a href="mailto:bobon.damien.wcs@gmail.com"
+          ><img
+            src="assets/logo/email-svgrepo-com.svg"
+            class="btnSocial"
+            alt="logo d'email"
+        /></a>
+        <a href="https://github.com/DamDamWCS"
+          ><img
+            src="assets/logo/github-icon.svg"
+            class="btnSocial"
+            alt="logo de GitHub"
+        /></a>
       </div>
-      <div class="separatorFooter paddingFooter"></div>
-      <div class="copyrightText paddingFooter">© 2022 Damien BOBON</div>
-      <img class="imgLogo paddingFooter" src="assets/logo.svg" alt="logo du site" />
-
+      <div class="separatorFooter marginFooter"></div>
+      <div class="copyrightText marginFooter">© 2022 Damien BOBON</div>
+      <img
+        class="imgLogo marginFooter"
+        src="assets/logo.svg"
+        alt="logo du site"
+      />
     </footer>
     <script src="script.js"></script>
   </body>
