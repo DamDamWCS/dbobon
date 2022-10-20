@@ -30,7 +30,7 @@ header.show-nav {
   /*Color le header en blanc quand le burger est déplié pour ne pas avoir de trou
   transparent entre le header et la nav et voir le box shadow du header */
 }
-.boxShadowBotom {
+.boxShadowBotom { /**/
   height: 85px;
   display: flex;
   justify-content: space-between;
@@ -45,10 +45,15 @@ section#realisation,
 section#contact {
   background-color: #f9f9f9;
 }
-/* article {
-  padding-bottom: 75px;
-} */
-
+.ancreTop{
+  position:fixed ;
+bottom: 15px;
+right: 15px;
+  height: 64px;
+  width: 64px;
+  filter: invert(53%) sepia(33%) saturate(5154%) hue-rotate(344deg)
+  brightness(100%) contrast(102%) drop-shadow(0px 5px 5px rgb(0 0 0));
+}
 .contnairTextImg {
   display: flex;
   flex-direction: column;
@@ -132,13 +137,6 @@ button.CV {
 article.CV {
   text-align: center;
 }
-/* 
-.contactForm {
-  text-align: center;
-  color: #606060;
-  font-weight: bold;
-  font-family: "SourceSansPro";
-} */
 .boxForm {
 
   width: 100%;
@@ -191,8 +189,6 @@ textarea {
   transition: all 0.5s ease-in-out;
   padding-inline-start: 0;
   list-style: none;
-
-  /* border: 1px solid #797b7d; */
 }
 .navbar__link {
   transform: translateX(101%);
@@ -283,7 +279,7 @@ textarea {
   transform: rotate(-45deg);
 }
 
-/* Animations */
+/* Animations d'arriver */
 .show-nav .first {
   transition: all 1s ease-out;
 }
@@ -434,7 +430,6 @@ img.btnSocial:hover {
     justify-content: center;
     align-items: center;
     transform: none;
-    /* transition: none; */
     height: 95px; /*hauteur du header pour la visu de l'effet box-shadow*/
     width: 100%;
     position: initial;
@@ -443,7 +438,6 @@ img.btnSocial:hover {
   .navbar__link {
     transition: none;
     transform: none;
-    /* padding-left: 40px; */
   }
   .navbar__link > a {
     display: flex;
@@ -493,5 +487,4 @@ img.btnSocial:hover {
     margin: 100px auto 100px auto;
     border : initial;
   }
-
 }
