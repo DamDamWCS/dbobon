@@ -45,9 +45,9 @@ section.realisation,
 section.contact {
   background-color: #f9f9f9;
 }
-article {
+/* article {
   padding-bottom: 75px;
-}
+} */
 
 .contnairTextImg {
   display: flex;
@@ -80,7 +80,7 @@ h2 {
   font-family: SourceSansPro;
   color: #606060;
   text-align: justify;
-  padding: 30px 5px;
+  padding: 30px 5px 0px 5px;
 }
 .contact p {
   padding: 0;
@@ -327,10 +327,11 @@ textarea {
 
 .separatorArticle {
   display: block;
-  width: 45px;
+  width: 10%;
   height: 1px;
   background-color: #7a7a7a;
-  margin: 0 auto;
+  margin: 50px auto 50px auto;
+
 }
 .separatorFooter {
   display: block;
@@ -396,6 +397,15 @@ img.btnSocial:hover {
     min-width: 200px;
     justify-content: space-evenly;
   }
+  section{
+    padding: 100px 10px;
+  }
+  h1{
+    padding: 0 0 75px 0;
+  }
+  .contnairCV{
+    padding-bottom: 75px;
+  }
   .titleLogo {
     display: initial;
     font-family: "AkayaTelivigala";
@@ -456,24 +466,27 @@ img.btnSocial:hover {
   }
   .descriptionArticle {
     max-width: 40%;
-    padding:0 15px;
+    padding: 0 15px;
   }
   .contnairTextImg {
     flex-direction: initial;
     justify-content: space-evenly;
   }
-  div.contnairTextImg:nth-child(even){
+  .reverse {
     flex-direction: row-reverse;
   }
-  form{
+  form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .boxForm,   .submitContact{
+  .boxForm,
+  .submitContact {
     width: 600px;
-
   }
-
+  .separatorArticle{
+    margin: 100px auto 100px auto;
+    border : initial;
+  }
 }
