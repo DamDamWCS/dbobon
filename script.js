@@ -16,9 +16,18 @@ function toggleMenu () {
   const formOk =
   "Merci de votre message, il sera traité prochainement.";
 
+
 document.querySelector(".contactForm");
 document.addEventListener("submit", function (event) {
+
+  // if(document.querySelector("#name").value ==""){
+  //   event.preventDefault();
+  //   alert("veuiller renseigner votre nom")
+  // }else{
+
+  // }
   event.preventDefault();
   document.querySelector(".contactForm").reset();
   alert(formOk);
+
 });
