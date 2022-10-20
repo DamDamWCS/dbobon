@@ -41,8 +41,8 @@ header.show-nav {
 section {
   padding: 55px 10px;
 }
-section.realisation,
-section.contact {
+section#realisation,
+section#contact {
   background-color: #f9f9f9;
 }
 /* article {
@@ -140,6 +140,7 @@ article.CV {
   font-family: "SourceSansPro";
 } */
 .boxForm {
+
   width: 100%;
   border: 1px solid #7a7a7a;
   border-radius: 2%;
@@ -390,7 +391,10 @@ img.btnSocial:hover {
   font-weight: bold;
   font-family: "SourceSansPro";
 }
-
+#contact p {
+  text-align: center;
+  padding: 0;
+}
 /* SCREEN LARGE */
 @media screen and (min-width: 745px) {
   .logo {
@@ -489,4 +493,5 @@ img.btnSocial:hover {
     margin: 100px auto 100px auto;
     border : initial;
   }
+
 }
