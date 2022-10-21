@@ -16,12 +16,6 @@ const formOk = "Merci de votre message, il sera traité prochainement.";
 
 document.querySelector(".contactForm");
 document.addEventListener("submit", function (event) {
-  // if(document.querySelector("#name").value ==""){
-  //   event.preventDefault();
-  //   alert("veuiller renseigner votre nom")
-  // }else{
-
-  // }
   event.preventDefault();
   document.querySelector(".contactForm").reset();
   alert(formOk);
@@ -39,16 +33,14 @@ document.addEventListener("submit", function (event) {
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
-    const hash = e.currentTarget.hash;
-    if (hash) {
+    const hash = e.currentTarget.hash; // Récupère la valeur du href du lien
+    const nameHash = document.querySelector(hash); // selection de l'élement du lien de l'ancre
       e.preventDefault();
       console.log(hash);
-      var nameHash = document.querySelector(hash);
-      console.log(nameHash.offsetTop);
+      console.log(nameHash.offsetTop); // J'affiche la position top de l'élement cible de mon lien
       window.scrollTo({
-        top: nameHash.offsetTop - 85,
-        behavior: "smooth",
+        top: nameHash.offsetTop - 85, //Je défini la postion top à la quel me rendre - la hauteur de mon header (85px)
+        behavior: "smooth", // J'ajoute un effet doux à la navigation
       });
-    }
   });
 });
