@@ -1,18 +1,18 @@
 @font-face {
   font-family: "AkayaTelivigala";
-  src: url("assets/Akaya_Telivigala/AkayaTelivigala-Regular.ttf");
+  src: url("assets/fonts/Akaya_Telivigala/AkayaTelivigala-Regular.ttf");
 }
 @font-face {
   font-family: "Amarante";
-  src: url("assets/Amaranth/Amaranth-Regular.ttf");
+  src: url("assets/fonts/Amaranth/Amaranth-Regular.ttf");
 }
 @font-face {
   font-family: "Helvetica";
-  src: url("assets/Helvetica/Helvetica.ttf");
+  src: url("assets/fonts/Helvetica/Helvetica.ttf");
 }
 @font-face {
   font-family: "SourceSansPro";
-  src: url("assets/Source_Sans_Pro/SourceSansPro-Regular.ttf");
+  src: url("assets/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
 }
 * {
   box-sizing: border-box;
@@ -25,7 +25,7 @@ header {
   left: 0px;
   top: 0px;
 }
-header.show-nav {
+header.showNav {
   background-color: #ffffff;
   /*Color le header en blanc quand le burger est déplié pour ne pas avoir de trou
   transparent entre le header et la nav et voir le box shadow du header */
@@ -201,13 +201,13 @@ textarea {
   color: #484d53;
 }
 
-.show-nav .navbarLinks {
+.showNav .navbarLinks {
   width: 100%;
   transform: translateX(0);
   background-color: white;
 }
 
-.show-nav .navbarLink {
+.showNav .navbarLink {
   transform: translateX(0);
 }
 .navbarLink > a {
@@ -269,28 +269,28 @@ textarea {
 .bar::after {
   transform: translateY(12px);
 }
-.show-nav .bar {
+.showNav .bar {
   width: 0;
   background: transparent;
 }
-.show-nav .bar::before {
+.showNav .bar::before {
   transform: rotate(45deg);
 }
-.show-nav .bar::after {
+.showNav .bar::after {
   transform: rotate(-45deg);
 }
 
 /* Animations d'arriver */
-.show-nav .first {
+.showNav .first {
   transition: all 1s ease-out;
 }
-.show-nav .second {
+.showNav .second {
   transition: all 1.1s ease-out;
 }
-.show-nav .third {
+.showNav .third {
   transition: all 1.2s ease-out;
 }
-.show-nav .four {
+.showNav .four {
   transition: all 1.3s ease-out;
 }
 

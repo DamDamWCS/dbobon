@@ -13,16 +13,16 @@
   <header>
     <div class="boxShadowBotom">
       <div class="logo">
-        <img class="imgLogo" src="assets/logo.svg" alt="logo du site">
+        <img class="imgLogo" src="assets/logo/logo.svg" alt="logo du site">
         <div class="titleLogo">DBOBON</div>
       </div>
       <div class="titleSite">DBOBON</div>
       <nav class="navbar">
         <ul class="navbarLinks">
-          <li class="navbarLink first"><a href="#presentation">Home</a></li>
-          <li class="navbarLink second"><a href="#realisation">Réalisations</a></li>
-          <li class="navbarLink third"><a href="#CV">Mon CV</a></li>
-          <li class="navbarLink four"><a href="#contact">Contact</a></li>
+          <li class="navbarLink first"><a class="anchorLink" href="#presentation">Home</a></li>
+          <li class="navbarLink second"><a class="anchorLink" href="#achievement">Réalisations</a></li>
+          <li class="navbarLink third"><a class="anchorLink" href="#CV">Mon CV</a></li>
+          <li class="navbarLink four"><a class="anchorLink" href="#contact">Contact</a></li>
         </ul>
         <button class="burger">
           <span class="bar"></span>
@@ -31,14 +31,14 @@
     </div>
   </header>
   <main>
-    <a href="#presentation"><img src="assets/logo/top.svg" alt="" class="ancreTop"></a>
+    <a href="#presentation" class="anchorLink"><img src="assets/logo/top.svg" alt="" class="ancreTop"></a>
     <section id="presentation">
       <h1>Présentation</h1>
       <article>
         <h2 class="h2MobileScreen">Qui je suis ?</h2>
         <div class="contnairTextImg">
           <div class="imgArticle">
-            <img src="assets/coding-man.jpg" alt="Un homme qui code">
+            <img src="assets/documents/coding-man.jpg" alt="Un homme qui code">
           </div>
           <div class="descriptionArticle">
             <h2 class="h2LargeScreen">Qui je suis ?</h2>
@@ -73,13 +73,13 @@
       </article>
     </section>
     <div class="separatorSection"></div>
-    <section id="realisation">
+    <section id="achievement">
       <article>
         <h1>Réalisations</h1>
         <h2 class="h2MobileScreen">Tel Ext PDL</h2>
         <div class="contnairTextImg reverse">
           <div class="imgArticle">
-            <img src="assets/Realisation/1erProjet.PNG" alt="Image de la 1er réalisation">
+            <img src="assets/documents/Realisation/1erProjet.PNG" alt="Image de la 1er réalisation">
           </div>
           <div class="descriptionArticle">
             <h2 class="h2LargeScreen">Tel Ext PDL</h2>
@@ -98,7 +98,7 @@
         <h2 class="h2MobileScreen">PDL Carnot GSL</h2>
         <div class="contnairTextImg">
           <div class="imgArticle">
-            <img src="assets/Realisation/2emeProjet.PNG" alt="Image de la 1er réalisation">
+            <img src="assets/documents/Realisation/2emeProjet.PNG" alt="Image de la 1er réalisation">
           </div>
           <div class="descriptionArticle">
             <h2 class="h2LargeScreen">PDL Carnot GSL</h2>
@@ -116,7 +116,7 @@
         <h2 class="h2MobileScreen">Kingdom of Colchis</h2>
         <div class="contnairTextImg reverse">
           <div class="imgArticle">
-            <img src="assets/Realisation/3emeProjet.PNG" alt="Image de la 3eme réalisation">
+            <img src="assets/documents/Realisation/3emeProjet.PNG" alt="Image de la 3eme réalisation">
           </div>
           <div class="descriptionArticle">
             <h2 class="h2LargeScreen">The Kingdom of Kolchis</h2>
@@ -135,10 +135,10 @@
         <h1>Mon CV</h1>
         <div class="contnairCV">
           <div>
-            <img class="imgArticleCV" src="assets/Cv.jpg" alt="image de mon CV">
+            <img class="imgArticleCV" src="assets/documents/Cv.jpg" alt="image de mon CV">
           </div>
       </div>
-        <button onclick="window.location.href='assets/CvPDF.pdf';" class="CV">Télecharger en PDF</button>
+        <button onclick="window.location.href='assets/documents/CvPDF.pdf';" class="CV">Télecharger en PDF</button>
       </article>
     </section>
     <div class="separatorSection"></div>
@@ -152,7 +152,7 @@
           <input type="text" id="name" name="name" class="boxForm" placeholder="Votre nom" required>
           <br>
           <br>
-          <input type="email" class="boxForm" id="email" name="email" placeholder="votre-email@exemple.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+          <input type="email" class="boxForm" id="email" name="email" placeholder="votre-email@exemple.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
           <br>
           <br>
           <textarea id="message" name="message" class="boxForm" placeholder="Votre message" required></textarea>
@@ -166,18 +166,18 @@
   </main>
   <footer>
     <div class="btnSocial marginFooter">
-      <a href="https://www.linkedin.com/in/damien-bobon-063482179/"><img src="assets/logo/linkedin-logo-svgrepo-com.svg"
+      <a href="https://www.linkedin.com/in/damien-bobon-063482179/"><img src="assets/logo/linkedin.svg"
           class="btnSocial" alt="logo de linkedin"></a>
-      <a href="mailto:bobon.damien.wcs@gmail.com"><img src="assets/logo/email-svgrepo-com.svg" class="btnSocial"
+      <a href="mailto:bobon.damien.wcs@gmail.com"><img src="assets/logo/email.svg" class="btnSocial"
           alt="logo d'email"></a>
-      <a href="https://github.com/DamDamWCS"><img src="assets/logo/github-icon.svg" class="btnSocial"
+      <a href="https://github.com/DamDamWCS"><img src="assets/logo/github.svg" class="btnSocial"
           alt="logo de GitHub"></a>
     </div>
     <div class="separatorFooter marginFooter"></div>
     <div class="copyrightText marginFooter">© 2022 Damien BOBON</div>
-    <img class="imgLogo marginFooter" src="assets/logo.svg" alt="logo du site">
+    <img class="imgLogo marginFooter" src="assets/logo/logo.svg" alt="logo du site">
   </footer>
-  <script src="script.js"></script>
+  <script src="JS/script.js"></script>
 </body>
 
 </html>
