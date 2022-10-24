@@ -1,18 +1,18 @@
 @font-face {
   font-family: "AkayaTelivigala";
-  src: url("./assets/fonts/Akaya_Telivigala/AkayaTelivigala-Regular.ttf");
+  src: url("assets/fonts/Akaya_Telivigala/AkayaTelivigala-Regular.ttf");
 }
 @font-face {
   font-family: "Amarante";
-  src: url("./assets/fonts/Amaranth/Amaranth-Regular.ttf");
+  src: url("assets/fonts/Amaranth/Amaranth-Regular.ttf");
 }
 @font-face {
   font-family: "Helvetica";
-  src: url("./assets/fonts/Helvetica/Helvetica.ttf");
+  src: url("assets/fonts/Helvetica/Helvetica.ttf");
 }
 @font-face {
   font-family: "SourceSansPro";
-  src: url("./assets/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
+  src: url("assets/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
 }
 * {
   box-sizing: border-box;
@@ -66,6 +66,56 @@ section#contact {
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
   background-color: #ffffff;
 }
+/*Style de la navigation*/
+.navbarLinks {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 0%;
+  height: 234px;
+  position: absolute;
+  top: 94px; /*Décalage d'un pixel à cause de l'apercu mobile
+   pour ne pas avoir de texte apparent entre le header et le menu déplié*/
+  right: 0;
+  transform: translateX(101%); /*par défaut le conteneur des liens de navigations sont cachés en dehors de l'écran*/
+  transition: all 0.5s ease-in-out;
+  padding-inline-start: 0;
+  list-style: none;
+}
+.navbarLink {
+  transform: translateX(101%);/*par défaut les liens de navigations sont cachés en dehors de l'écran*/
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: "Amarante";
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #484d53;
+}
+.showNav .navbarLinks {
+  width: 100%;
+  transform: translateX(0);
+  background-color: white;
+}
+.showNav .navbarLink {
+  transform: translateX(0);
+}
+.navbarLink > a {
+  display: block;
+  padding: 1rem;
+  font-family: "Amarante";
+  text-decoration: none;
+  color: #797b7d;
+  border: 1px solid #1392e100; /*rajout d'un border d'1px transparant pour ne plus décaler le menu au over */
+}
+.navbarLink > a:hover {
+  background-color: #1ab7ee;
+  border: 1px solid #1391e1;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 3px;
+}
+
 .anchorTop{
   position:fixed ;
 bottom: 15px;
@@ -173,59 +223,6 @@ textarea {
 }
 .submitContact:hover {
   background: #737474e0;
-}
-.navbarLinks {
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-
-  width: 0%;
-  height: 234px;
-  /* height: calc(100vh - 85px); */
-  position: absolute;
-  top: 94px; /*Décalage d'un pixel à cause de l'apercu mobile
-   pour ne pas avoir de texte apparent entre le header et le menu déplié*/
-  right: 0;
-  transform: translateX(101%);
-  transition: all 0.5s ease-in-out;
-  padding-inline-start: 0;
-  list-style: none;
-}
-.navbarLink {
-  transform: translateX(101%);
-  display: block;
-  width: 100%;
-  text-align: center;
-  font-family: "Amarante";
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #484d53;
-}
-
-.showNav .navbarLinks {
-  width: 100%;
-  transform: translateX(0);
-  background-color: white;
-}
-
-.showNav .navbarLink {
-  transform: translateX(0);
-}
-.navbarLink > a {
-  display: block;
-  padding: 1rem;
-  font-family: "Amarante";
-  text-decoration: none;
-  color: #797b7d;
-  border: 1px solid #1392e100; /*rajout d'un border d'1px transparant pour ne plus décaler le menu au over */
-}
-
-.navbarLink > a:hover {
-  background-color: #1ab7ee;
-  border: 1px solid #1391e1;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-  color: white;
-  border-radius: 3px;
 }
 /* Toggle menu */
 .burger {

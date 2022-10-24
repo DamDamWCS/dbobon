@@ -31,17 +31,18 @@ document.addEventListener("submit", function (event) {
 //   });
 // });
 
-//NAVIGATION DES LIENS D'ANCRES 
-const anchorLinks = document.querySelectorAll(".anchorLink");
-anchorLinks.forEach((anchorLink) => {
+//NAVIGATION DES LIENS D'ANCRES
+//const anchorLinks = document.querySelectorAll(".anchorLink");
+//anchorLinks.forEach((anchorLink) => {
+document.querySelectorAll(".anchorLink").forEach(anchorLink => {
   anchorLink.addEventListener("click", function (e) {
     const hash = e.currentTarget.hash; // Récupère la valeur du href du lien
     const nameHash = document.querySelector(hash); // selection de l'élement du lien de l'ancre
     e.preventDefault();
-    console.log(anchorLinks);
+    //console.log(anchorLinks);
     console.log(hash);
     console.log(nameHash.offsetTop); // J'affiche la position top de l'élement cible de mon lien
-    window.scrollTo({ //Positionnement de la fenêtre
+    window.scrollTo({//Positionnement de la fenêtre
       top: nameHash.offsetTop - 85, //Je défini la postion top à la quel me rendre - la hauteur de mon header (85px)
       behavior: "smooth", // J'ajoute un effet doux à la navigation
     });
