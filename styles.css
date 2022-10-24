@@ -30,35 +30,6 @@ header.showNav {
   /*Color le header en blanc quand le burger est déplié pour ne pas avoir de trou
   transparent entre le header et la nav et voir le box shadow du header */
 }
-.boxShadowBotom { /**/
-  height: 85px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
-  background-color: #ffffff;
-}
-section {
-  padding: 55px 10px;
-}
-section#realisation,
-section#contact {
-  background-color: #f9f9f9;
-}
-.ancreTop{
-  position:fixed ;
-bottom: 15px;
-right: 15px;
-  height: 64px;
-  width: 64px;
-  filter: invert(53%) sepia(33%) saturate(5154%) hue-rotate(344deg)
-  brightness(100%) contrast(102%) drop-shadow(0px 5px 5px rgb(0 0 0));
-}
-.contnairTextImg {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 h1 {
   text-align: center;
   font-family: "AkayaTelivigala";
@@ -73,13 +44,41 @@ h2 {
   font-family: "Helvetica";
   font-weight: bold;
 }
-
 .h2MobileScreen {
   text-align: center;
   padding: 0 0 50px 0;
 }
 .h2LargeScreen {
   display: none;
+}
+section {
+  padding: 55px 10px;
+}
+section#realisation,
+section#contact {
+  background-color: #f9f9f9;
+}
+.boxShadowBotom { /*Header + effet boxShadow*/
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+}
+.anchorTop{
+  position:fixed ;
+bottom: 15px;
+right: 15px;
+  height: 64px;
+  width: 64px;
+  filter: invert(53%) sepia(33%) saturate(5154%) hue-rotate(344deg)
+  brightness(100%) contrast(102%) drop-shadow(0px 5px 5px rgb(0 0 0));
+}
+.contnairTextImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .pArticle {
   font-family: SourceSansPro;
@@ -100,6 +99,7 @@ h2 {
   border: 1px solid #606060;
   max-width: 700px;
 }
+/*Style de la section CV*/
 .contnairCV {
   display: flex;
   justify-content: center;
@@ -137,6 +137,7 @@ button.CV {
 article.CV {
   text-align: center;
 }
+/*Style de la section contact*/
 .boxForm {
 
   width: 100%;
@@ -322,21 +323,19 @@ textarea {
   filter: invert(53%) sepia(33%) saturate(5154%) hue-rotate(344deg)
     brightness(100%) contrast(102%) drop-shadow(0px 5px 5px rgb(0 0 0));
 }
-
+/*Style des séparateur*/
 .separatorArticle {
   display: block;
   width: 10%;
   height: 1px;
   background-color: #7a7a7a;
   margin: 50px auto 50px auto;
-
 }
 .separatorFooter {
   display: block;
   width: 200px;
   height: 1px;
   background-color: #747475;
-
   margin: 0 auto;
 }
 .separatorSection {
@@ -424,7 +423,6 @@ img.btnSocial:hover {
     list-style: none;
     list-style-type: initial;
   }
-
   .navbarLinks {
     display: flex;
     flex-direction: row;
@@ -447,9 +445,7 @@ img.btnSocial:hover {
     white-space: nowrap;
     text-decoration: none;
     height: 85px;
-
   }
-
   .navbarLink > a:hover {
     background-color: #1ab7ee;
     border: 1px solid #1391e1;
@@ -457,7 +453,6 @@ img.btnSocial:hover {
     color: white;
     border-radius: 5px;
   }
-
   .h2LargeScreen {
     display: initial;
   }
