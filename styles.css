@@ -254,6 +254,7 @@ textarea {
 }
 .submitContact:hover {
   background: #737474e0;
+  cursor: pointer;
 }
 /* Toggle menu */
 .burger {
