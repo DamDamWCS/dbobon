@@ -32,9 +32,7 @@ document.addEventListener("submit", function (event) {
 // });
 
 //NAVIGATION DES LIENS D'ANCRES
-//const anchorLinks = document.querySelectorAll(".anchorLink");
-//anchorLinks.forEach((anchorLink) => {
-document.querySelectorAll(".anchorLink").forEach(anchorLink => {
+document.querySelectorAll(".anchorLink").forEach((anchorLink) => {
   anchorLink.addEventListener("click", function (e) {
     const hash = e.currentTarget.hash; // Récupère la valeur du href du lien
     const nameHash = document.querySelector(hash); // selection de l'élement du lien de l'ancre
@@ -42,31 +40,26 @@ document.querySelectorAll(".anchorLink").forEach(anchorLink => {
     //console.log(anchorLinks);
     console.log(hash);
     console.log(nameHash.offsetTop); // J'affiche la position top de l'élement cible de mon lien
-    window.scrollTo({//Positionnement de la fenêtre
+    window.scrollTo({
+      //Positionnement de la fenêtre
       top: nameHash.offsetTop - 85, //Je défini la postion top à la quel me rendre - la hauteur de mon header (85px)
       behavior: "smooth", // J'ajoute un effet doux à la navigation
     });
   });
 });
 
+//POPUP
+const popup = document.querySelector(".popup"); //selection de la div popup
+const popupContent = document.querySelector(".popupContent"); // selction d de l'image dans le popup
+document.querySelectorAll(".imgAchivement").forEach((img) => { //boucle sur les images pour afficher la popup en fonction de l'image cliqué
+  img.addEventListener("click", function () {
+    //console.log(popup);
+    popup.style.display = "block"; //Permet de passer de display none à block pour afficher la popup
+    popupContent.src = this.src;// On change la source de l'image en fonction l'image selectionné au clique.
+  });
+});
+const span = document.querySelector(".close");//selection du bouton fermer
 
-//ANIMATION DES SECTION
-
-// First we select the element we want to target
-// const target = document.querySelector(".animated");
-// function handleIntersection(entries) {
-  // The callback will return an array of entries, even if you are only observing a single item
-//   entries.map((entry) => {
-//     if (entry.isIntersecting) {
-//       entry.target.classList.add('visible')
-//     } else {
-//       entry.target.classList.remove('visible')
-//     }
-//   });
-// }
-// Next we instantiate the observer with the function we created above. This takes an optional configuration
-// object that we will use in the other examples.
-//const observer = new IntersectionObserver(handleIntersection);
-
-// Finally start observing the target element
-//observer.observe(target);
+span.addEventListener("click", function () {
+  popup.style.display = "none"; //on dé-affiche la popup au clique du bouton fermer
+});
