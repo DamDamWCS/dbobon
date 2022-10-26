@@ -1,19 +1,19 @@
-@font-face {
+/*@font-face {
   font-family: "AkayaTelivigala";
-  src: url("assets/fonts/Akaya_Telivigala/AkayaTelivigala-Regular.ttf");
+  src: url("./assets/fonts/Akaya_Telivigala/AkayaTelivigala-Regular.ttf");
 }
 @font-face {
   font-family: "Amarante";
-  src: url("assets/fonts/Amaranth/Amaranth-Regular.ttf");
+  src: url("./assets/fonts/Amaranth/Amaranth-Regular.ttf");
 }
 @font-face {
   font-family: "Helvetica";
-  src: url("assets/fonts/Helvetica/Helvetica.ttf");
+  src: url("./assets/fonts/Helvetica/Helvetica.ttf");
 }
 @font-face {
   font-family: "SourceSansPro";
-  src: url("assets/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
-}
+  src: url("./assets/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
+}*/
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -114,14 +114,6 @@ section#contact {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   color: white;
   border-radius: 3px;
-}
-.animated {
-  transform: translateY(100px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-.animated.visible {
-  opacity: 1;
-  transform: translateX(0);
 }
 .anchorTop{
   position:fixed ;
