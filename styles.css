@@ -115,7 +115,14 @@ section#contact {
   color: white;
   border-radius: 3px;
 }
-
+.animated {
+  transform: translateY(100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.animated.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
 .anchorTop{
   position:fixed ;
 bottom: 15px;
