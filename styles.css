@@ -53,7 +53,7 @@ section#achievement,
 section#contact {
   background-color: #f9f9f9;
 }
-.boxShadowBotom { /*Header + effet boxShadow*/
+.boxShadowBotom {
   height: 85px;
   display: flex;
   justify-content: space-between;
