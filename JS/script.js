@@ -2,11 +2,9 @@
 function toggleMenu() {
   const navbar = document.querySelector(".navbar");
   const burger = document.querySelector(".burger");
-  const header = document.querySelector("header");
 
   burger.addEventListener("click", function () {
     navbar.classList.toggle("showNav");
-    header.classList.toggle("showNav");
   });
 }
 toggleMenu();

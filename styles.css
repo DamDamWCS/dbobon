@@ -20,15 +20,10 @@
   outline: none;
 }
 header {
-  height: 95px;
+  height: 85px;
   position: sticky;
   left: 0px;
   top: 0px;
-}
-header.showNav {
-  background-color: #ffffff;
-  /*Color le header en blanc quand le burger est déplié pour ne pas avoir de trou
-  transparent entre le header et la nav et voir le box shadow du header */
 }
 h1 {
   text-align: center;
@@ -68,14 +63,14 @@ section#contact {
 }
 /*Style de la navigation*/
 .navbarLinks {
+  z-index: -1;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   width: 0%;
-  height: 234px;
+  height: 245px;
   position: absolute;
-  top: 94px; /*Décalage d'un pixel à cause de l'apercu mobile
-   pour ne pas avoir de texte apparent entre le header et le menu déplié*/
+  top: 85px; 
   right: 0;
   transform: translateX(101%); /*par défaut le conteneur des liens de navigations sont cachés en dehors de l'écran*/
   transition: all 0.5s ease-in-out;
@@ -91,6 +86,9 @@ section#contact {
   font-size: 1.2rem;
   font-weight: bold;
   color: #484d53;
+}
+.navbarLink.first{
+  margin-top: 10px;
 }
 .showNav .navbarLinks {
   width: 100%;
@@ -442,6 +440,9 @@ img.btnSocial:hover {
 }
 /* SCREEN LARGE */
 @media screen and (min-width: 745px) {
+  .navbarLink.first{
+    margin-top: 0px;
+  }
   .logo {
     min-width: 200px;
     justify-content: space-evenly;
