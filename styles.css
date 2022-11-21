@@ -49,10 +49,10 @@ h2 {
 section {
   padding: 55px 10px;
 }
-section#achievement,
+/* section#achievement,
 section#contact {
   background-color: #f9f9f9;
-}
+} */
 .boxShadowBotom {
   height: 85px;
   display: flex;
