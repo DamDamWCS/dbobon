@@ -19,6 +19,7 @@
   margin: 0px;
   outline: none;
 }
+
 header {
   height: 85px;
   position: sticky;
@@ -26,7 +27,7 @@ header {
   top: 0px;
 }
 body {
-  background-color: #ededed;
+  background-color: #fcfcfc;
 }
 h1 {
   text-align: center;
@@ -49,12 +50,18 @@ h2 {
 .h2LargeScreen {
   display: none;
 }
+.contnairMain{
+  display: flex;
+justify-content: center;
+}
 section {
   margin: 50px 10px 50px 10px;
   background-color: white;
-  padding: 10px;
+  /* padding: 10px; */
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px;
+  max-width: 1200px;
+
 }
 /* section#achievement,
 section#contact {
@@ -66,7 +73,17 @@ section#contact {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
-  background-color: #ffffff;
+  background-color: #fceee0;
+}
+.hereosBanner{
+  width: 100%;
+  height: 75vh;
+  background-image: url("./assets/documents/hereos-banner.png");
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 0px 0px;
 }
 /*Style de la navigation*/
 .navbarLinks {
@@ -114,19 +131,19 @@ section#contact {
   padding: 1rem;
   font-family: "Amarante";
   text-decoration: none;
-  color: #797b7d;
+  color: #CA574F;
   border: 1px solid #1392e100; /*rajout d'un border d'1px transparant pour ne plus décaler le menu au over */
 }
 .navbarLink > a:hover {
-  background-color: #1ab7ee;
-  border: 1px solid #1391e1;
+  background-color: #CA574F;
+  border: 1px solid #752923;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   color: white;
   border-radius: 3px;
 }
 /*Style du LOGO*/
 .titleSite {
-  color: #484d53;
+  color: #CA574F;
   font-family: "AkayaTelivigala";
   font-weight: bold;
   font-size: 24px;
@@ -145,13 +162,13 @@ section#contact {
   border-top-right-radius: 15px;
   border-end-end-radius: 15px;
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
-  background: #484d53;
+  background: #202020;
   border-color: #000000;
 }
 .imgLogo {
   /*Modification du logo SVG pour la coleur orange et l'application d'un drop shadow*/
   filter: invert(53%) sepia(33%) saturate(5154%) hue-rotate(344deg)
-    brightness(100%) contrast(102%) drop-shadow(0px 5px 5px rgb(0 0 0));
+    brightness(100%) contrast(102%) drop-shadow(0px 5px 5px rgb(0 0 0));  
 }
 .anchorTop {
   position: fixed;
@@ -282,7 +299,7 @@ textarea {
   border-radius: 3px;
   margin: 0 auto;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
-  background: #484d53;
+  background: #CA574F;
   transition: all 0.5s ease-in-out;
 }
 .bar::before,
@@ -293,7 +310,7 @@ textarea {
   position: absolute;
   margin: 0 auto;
   left: 25px;
-  background: #484d53;
+  background: #CA574F;
   border-radius: 3px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
   transition: all 0.5s ease-in-out;
@@ -365,7 +382,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: 280px;
-  background-color: #484d53;
+  background-color: #202020;
 }
 div.btnSocial {
   width: 300px;
@@ -461,7 +478,8 @@ img.btnSocial:hover {
     justify-content: space-evenly;
   }
   section {
-    padding: 100px 10px;
+    /* padding: 100px 10px; */
+  
   }
   h1 {
     padding: 0 0 75px 0;
@@ -474,8 +492,10 @@ img.btnSocial:hover {
     font-family: "AkayaTelivigala";
     font-weight: bold;
     font-size: 24px;
-    color: #ffffff;
+    color: #CA574F;
   }
+
+
   .titleSite {
     display: none;
   }
@@ -510,8 +530,8 @@ img.btnSocial:hover {
     height: 85px;
   }
   .navbarLink > a:hover {
-    background-color: #1ab7ee;
-    border: 1px solid #1391e1;
+    background-color: #CA574F;
+    border: 1px solid #752923;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
     color: white;
     border-radius: 5px;
