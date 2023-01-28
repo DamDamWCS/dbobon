@@ -25,6 +25,9 @@ header {
   left: 0px;
   top: 0px;
 }
+body {
+  background-color: #ededed;
+}
 h1 {
   text-align: center;
   font-family: "AkayaTelivigala";
@@ -47,12 +50,21 @@ h2 {
   display: none;
 }
 section {
-  padding: 55px 10px;
+  margin: 50px 10px 50px 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px;
+  max-width: 1200px;
 }
-section#achievement,
+.contnairCenter{
+  display: flex;
+  justify-content: center;
+}
+/* section#achievement,
 section#contact {
   background-color: #f9f9f9;
-}
+} */
 .boxShadowBotom {
   height: 85px;
   display: flex;
@@ -70,15 +82,19 @@ section#contact {
   width: 0%;
   height: 245px;
   position: absolute;
-  top: 85px; 
+  top: 85px;
   right: 0;
-  transform: translateX(101%); /*par défaut le conteneur des liens de navigations sont cachés en dehors de l'écran*/
+  transform: translateX(
+    101%
+  ); /*par défaut le conteneur des liens de navigations sont cachés en dehors de l'écran*/
   transition: all 0.5s ease-in-out;
   padding-inline-start: 0;
   list-style: none;
 }
 .navbarLink {
-  transform: translateX(101%);/*par défaut les liens de navigations sont cachés en dehors de l'écran*/
+  transform: translateX(
+    101%
+  ); /*par défaut les liens de navigations sont cachés en dehors de l'écran*/
   display: block;
   width: 100%;
   text-align: center;
@@ -87,7 +103,7 @@ section#contact {
   font-weight: bold;
   color: #484d53;
 }
-.navbarLink.first{
+.navbarLink.first {
   margin-top: 10px;
 }
 .showNav .navbarLinks {
@@ -142,16 +158,16 @@ section#contact {
   filter: invert(53%) sepia(33%) saturate(5154%) hue-rotate(344deg)
     brightness(100%) contrast(102%) drop-shadow(0px 5px 5px rgb(0 0 0));
 }
-.anchorTop{
-  position:fixed ;
-bottom: 15px;
-right: 15px;
+.anchorTop {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
   height: 64px;
   width: 64px;
   filter: invert(53%) sepia(33%) saturate(5154%) hue-rotate(344deg)
-  brightness(100%) contrast(102%) drop-shadow(0px 5px 5px rgb(0 0 0));
+    brightness(100%) contrast(102%) drop-shadow(0px 5px 5px rgb(0 0 0));
 }
-/*Style des sections*/ 
+/*Style des sections*/
 .contnairTextImg {
   display: flex;
   flex-direction: column;
@@ -211,14 +227,12 @@ button.CV {
   font-size: 14px;
   text-align: center;
   cursor: pointer;
-
 }
 article.CV {
   text-align: center;
 }
 /*Style de la section contact*/
 .boxForm {
-
   width: 100%;
   border: 1px solid #7a7a7a;
   border-radius: 2%;
@@ -393,17 +407,17 @@ img.btnSocial:hover {
   cursor: pointer;
 }
 .popup {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
-  padding-top: 100px; 
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color:black;
-  background-color: rgba(0,0,0,0.9); 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 /*Contenu de la popup (Image) */
 .popupContent {
@@ -412,15 +426,19 @@ img.btnSocial:hover {
   width: 100%;
 }
 /*Animation de l'affichage du contenu de la popup*/
-.popupContent{
+.popupContent {
   width: 100%;
   animation-name: zoom;
   animation-duration: 0.6s;
 }
 /*Key frame décrivant l'animation avec l'odre d'animation*/
 @keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 /* bouton de fermeture de la popup */
 .close {
@@ -440,20 +458,20 @@ img.btnSocial:hover {
 }
 /* SCREEN LARGE */
 @media screen and (min-width: 745px) {
-  .navbarLink.first{
+  .navbarLink.first {
     margin-top: 0px;
   }
   .logo {
     min-width: 200px;
     justify-content: space-evenly;
   }
-  section{
+  section {
     padding: 100px 10px;
   }
-  h1{
+  h1 {
     padding: 0 0 75px 0;
   }
-  .contnairCV{
+  .contnairCV {
     padding-bottom: 75px;
   }
   .titleLogo {
@@ -530,12 +548,12 @@ img.btnSocial:hover {
   .submitContact {
     width: 600px;
   }
-  .separatorArticle{
+  .separatorArticle {
     margin: 100px auto 100px auto;
-    border : initial;
+    border: initial;
   }
-  .popupContent{
-width: 80%;
-  max-width: 1000px;
-}
+  .popupContent {
+    width: 80%;
+    max-width: 1000px;
+  }
 }
