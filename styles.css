@@ -55,6 +55,11 @@ section {
   padding: 10px;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px;
+  max-width: 1200px;
+}
+.contnairCenter{
+  display: flex;
+  justify-content: center;
 }
 /* section#achievement,
 section#contact {
