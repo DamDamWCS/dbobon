@@ -28,30 +28,31 @@ header {
 }
 body {
   background-color: #dbcdc0;
-}
-/* h1 {
+  color: rgb(51, 51, 51);
+  margin: 0px;
   text-align: center;
-  font-family: "AkayaTelivigala";
-  font-size: 2.5rem;
-  color: #606060;
-  font-weight: 400;
-  padding: 0 0 55px 0;
-} */
+  font-family: 'Montserrat Alternates', sans-serif; 
+  background-color: rgba(235, 208, 176, 0.219); 
+}
+p{
+  line-height: 2
+}
+
+
 h1{
   font-weight: normal;
   margin: 0px;
-  padding-top: 125px;
+  /* padding-top: 125px; */
   font-family: 'Montez', cursive;
   font-size: 5em;
   color: #DC4C20;
   text-shadow: #000000cb 1px 1px, #000000cb -1px 1px, #000000cb -1px -1px, #000000cb 1px -1px;
 }
-/* h2 {
-  font-size: 1.5rem;
-  color: #CA574F;
-  font-family: "Helvetica";
-  font-weight: bold;
-} */
+.devTitle{
+  color: white;
+  padding-top: 20px;
+  text-shadow: 1px 1px #000000;  
+}
 h2{
   font-family: 'Calligraffitti', cursive;
   color:#DC4C20;
@@ -75,8 +76,17 @@ section {
   background-color: #f3e7da;
   /* padding: 10px; */
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px;
-  max-width: 1500px;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px; */
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+      max-width: 1500px;
+
+}
+
+.avatarWolf{
+  border: #bb4030 5px solid;
+  border-radius: 100%;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    /* filter:drop-shadow(1px 1px 3px rgb(0 0 0));   */
 
 }
 /* section#achievement,
@@ -92,8 +102,13 @@ section#contact {
   background-color: #eed1b2;
 }
 .hereosBanner{
+  display: flex;
+  flex-direction: column;
+  Justify-content: center ;
+  Align-items: center;
   width: 100%;
-  height: 75vh;
+  height: 80vh;
+  min-height: 400px;
   background-image: url("./assets/documents/hereos-banner.png");
   background-size: cover;
   background-position: center;
@@ -501,9 +516,10 @@ img.btnSocial:hover {
     /* padding: 100px 10px; */
   
   }
-  h1 {
+  /* h1 {
     padding: 0 0 75px 0;
-  }
+  } */
+
   .contnairCV {
     padding-bottom: 75px;
   }
