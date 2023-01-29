@@ -9,18 +9,6 @@ function toggleMenu() {
 }
 toggleMenu();
 
-// FORMULAIRE DE CONTACTE
-//const nameForm = document.querySelector("#nameForm").value
-
-document.querySelector(".contactForm");
-document.addEventListener("submit", function (event) {
-  event.preventDefault();
-  const nameForm = document.querySelector("#nameForm").value
-  const formOk = `Merci ${nameForm} de votre message, il sera traité prochainement.`;
-  document.querySelector(".contactForm").reset();
-  console.log(nameForm);
-  alert(formOk);
-});
 
 // $(document).ready(function() {
 //   $('a[href*="#"]').on('click', (event) => {

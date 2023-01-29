@@ -35,7 +35,8 @@ body {
   background-color: rgba(235, 208, 176, 0.219); 
 }
 p{
-  line-height: 2
+  line-height: 2;
+
 }
 
 
@@ -47,6 +48,9 @@ h1{
   font-size: 5em;
   color: #DC4C20;
   text-shadow: #000000cb 1px 1px, #000000cb -1px 1px, #000000cb -1px -1px, #000000cb 1px -1px;
+}
+.h1Title{
+  padding: 30px 0 30px 0;
 }
 .devTitle{
   color: white;
@@ -214,18 +218,18 @@ section#contact {
   filter: invert(53%) sepia(33%) saturate(5154%) hue-rotate(344deg)
     brightness(100%) contrast(102%) drop-shadow(0px 5px 5px rgb(0 0 0));
 }
+/* Section Info */
+article{
+padding: 20px 10px 20px 10px;
+
+}
 /*Style des sections*/
 .contnairTextImg {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.pArticle {
-  font-family: SourceSansPro;
-  color: #606060;
-  text-align: justify;
-  padding: 30px 5px 0px 5px;
-}
+
 .contact p {
   padding: 0;
   text-align: center;
@@ -279,6 +283,12 @@ article.CV {
   text-align: center;
 }
 /*Style de la section contact*/
+.contact{
+  padding: 20px 0 10px 0;
+}
+.email{
+  padding-bottom: 5px ;
+}
 .boxForm {
   width: 100%;
   border: 1px solid #7a7a7a;
