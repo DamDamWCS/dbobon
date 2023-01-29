@@ -186,6 +186,8 @@ section#contact {
   /*Modification du logo SVG pour la coleur orange et l'application d'un drop shadow*/
   filter: invert(53%) sepia(33%) saturate(5154%) hue-rotate(344deg)
     brightness(100%) contrast(102%) drop-shadow(0px 5px 5px rgb(0 0 0));  
+    max-height: 85px;
+    padding: 5px 0 5px 0;
 
 }
 .anchorTop {
