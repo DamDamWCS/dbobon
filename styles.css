@@ -244,18 +244,7 @@ padding: 20px 10px 20px 10px;
   max-width: 700px;
 }
 /*Style de la section CV*/
-.contnairCV {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 50px;
-}
-.imgArticleCV {
-  height: 800px;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 1%;
-  border: 1px solid #606060;
-}
+
 a.CV {
   text-decoration: initial;
   color: white;
@@ -267,6 +256,7 @@ button.CV {
   width: 173px;
   height: 32px;
   padding: 0px 10px 0px 10px;
+  margin-bottom: 20px;
   background: #CA574F;
   color: #ffffff;
   border-color: #000000;
@@ -279,9 +269,7 @@ button.CV {
   text-align: center;
   cursor: pointer;
 }
-article.CV {
-  text-align: center;
-}
+
 /*Style de la section contact*/
 .contact{
   padding: 20px 0 10px 0;
