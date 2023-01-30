@@ -39,7 +39,15 @@ p{
 
 }
 
-
+hr{
+  border:none ;
+  border-radius: 5px;
+  height: 2px;
+  background-image: linear-gradient(to right,  rgba(235, 209, 176, 0.103), #DC4C20,
+  rgba(235, 209, 176, 0.103));
+  width: 30%;
+  margin: 10px auto;  
+}
 h1{
   font-weight: normal;
   margin: 0px;
@@ -243,7 +251,20 @@ padding: 20px 10px 20px 10px;
   border: 1px solid #606060;
   max-width: 700px;
 }
-/*Style de la section CV*/
+
+/* Article langage  */
+  .contnairLangages{
+    display: flex;
+flex-wrap: wrap;
+max-width: 75%;
+Margin : 0 auto;
+justify-content: center;
+    align-items: center;
+  }
+  .langague{
+    padding: 10px;
+    width: 100px;
+  }
 
 a.CV {
   text-decoration: initial;
@@ -606,4 +627,10 @@ img.btnSocial:hover {
     width: 80%;
     max-width: 1000px;
   }
+  /* .contnairLangages{
+max-width: 50%;
+  }
+  .langague{
+    width: 32%;
+  } */
 }
