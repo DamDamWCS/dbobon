@@ -73,6 +73,7 @@ h2{
   font-weight: normal;   
   padding-bottom: 20px; 
 }
+
 .h2MobileScreen {
   text-align: center;
   padding: 0 0 50px 0;
@@ -98,8 +99,7 @@ section {
 .avatarWolf{
   border: #bb4030 5px solid;
   border-radius: 100%;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    /* filter:drop-shadow(1px 1px 3px rgb(0 0 0));   */
+    filter:drop-shadow(1px 1px 3px rgb(0 0 0));  
 
 }
 /* section#achievement,
@@ -228,11 +228,7 @@ section#contact {
   filter: invert(53%) sepia(33%) saturate(5154%) hue-rotate(344deg)
     brightness(100%) contrast(102%) drop-shadow(0px 5px 5px rgb(0 0 0));
 }
-/* Section Info */
-article{
-padding: 20px 10px 20px 10px;
 
-}
 /*Style des sections*/
 .contnairTextImg {
   display: flex;
