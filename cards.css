@@ -47,6 +47,7 @@
   
 }
 .imgProjet{
+    /* Ratio images : 4/3 */
   border-radius: 5px;
   object-fit: cover;
   width: 300px;
@@ -95,6 +96,7 @@ margin: 10px 0 10px 0;
 }
 
 @media screen and (min-width: 500px) {
+  /* Ratio images : 4/3 */
   .imgProjet{
     width: 400px;
     height: 300px;
