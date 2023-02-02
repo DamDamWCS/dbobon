@@ -1,177 +1,262 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="assets/logo/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="cards.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Calligraffitti%7CMontez%7CMontserrat+Alternates&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DBobon</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <link rel="icon" type="image/x-icon" href="assets/logo/favicon.ico">
-  <link rel="stylesheet" href="styles.css">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DBobon</title>
-</head>
-
-<body id="presentation">
-  <header>
-    <div class="boxShadowBotom">
-      <div class="logo">
-        <img class="imgLogo" src="assets/logo/logo.svg" alt="logo du site">
-        <div class="titleLogo">DBOBON</div>
+  <body id="presentation">
+    <header>
+      <div class="boxShadowBotom">
+        <div class="logo">
+          <img class="imgLogo" src="assets/logo/wolf7.png" alt="logo du site" />
+          <div class="titleLogo">DBOBON</div>
+        </div>
+        <div class="titleSite">DBOBON</div>
+        <nav class="navbar">
+          <ul class="navbarLinks">
+            <li class="navbarLink first">
+              <a class="anchorLink" href="#presentation">Home</a>
+            </li>
+            <li class="navbarLink second">
+              <a class="anchorLink" href="#achievement">Réalisations</a>
+            </li>
+            <li class="navbarLink third">
+              <a class="anchorLink" href="#skills">Skills</a>
+            </li>
+            <li class="navbarLink four">
+              <a class="anchorLink" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <button class="burger">
+            <span class="bar"></span>
+          </button>
+        </nav>
       </div>
-      <div class="titleSite">DBOBON</div>
-      <nav class="navbar">
-        <ul class="navbarLinks">
-          <li class="navbarLink first"><a class="anchorLink" href="#presentation">Home</a></li>
-          <li class="navbarLink second"><a class="anchorLink" href="#achievement">Réalisations</a></li>
-          <li class="navbarLink third"><a class="anchorLink" href="#CV">Mon CV</a></li>
-          <li class="navbarLink four"><a class="anchorLink" href="#contact">Contact</a></li>
-        </ul>
-        <button class="burger">
-          <span class="bar"></span>
-        </button>
-      </nav>
+    </header>
+    <div class="contnairMain">
+      <main>
+        <a href="#presentation" class="anchorLink"
+          ><img src="assets/logo/top.svg" alt="" class="anchorTop"
+        /></a>
+
+        <section>
+          <div class="hereosBanner">
+            <h1>Damien Bobon</h1>
+            <img
+              class="avatarWolf"
+              src="assets/documents/avatar10.png"
+              height="150"
+              alt="avatar"
+            />
+            <strong class="devTitle">Developpeur Web</strong>
+          </div>
+
+          <article class="info">
+            <h2>Infos !</h2>
+            <p>
+              Bienvenue sur mon portfolio en ligne ! Ici vous pourrez découvrir
+              mes créations de sites web et mes projets de développement
+              personnel. J'ai travaillé sur une variété de projets, allant des
+              sites web élégants et professionnels pour les entreprises, aux
+              projets de développement créatifs et passionnants. ﻿ Naviguez à
+              travers mon portfolio pour voir mes réalisations et n'hésitez pas
+              à me contacter .
+            </p>
+          </article>
+        </section>
+
+        <section id="achievement">
+          <h1 class="h1Title">Réalisations</h1>
+          <article class="achievement">
+            <div class="contnairCards">
+              <div>
+                <h3 class="h3Projets">Portfolio</h3>
+                <div class="card">
+                  <div class="content">
+                    <div class="front">
+                      <img
+                        src="assets/documents/Realisation/portfolio.png"
+                        alt="portfolio"
+                        class="imgProjet"
+                      />
+                    </div>
+                    <div class="back">
+                      <p>
+                        Il s'agit de mon portfolio sur lequel vous vous trouvez
+                        actuelement!
+                      </p>
+                      <p><b>HTML / CSS / JavaScript</b></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="h3Projets">YourDeck</h3>
+                <div class="card">
+                  <div class="content">
+                    <div class="front">
+                      <img
+                        src="assets/documents/Realisation/YourDeck.png"
+                        alt="YourDeck"
+                        class="imgProjet"
+                      />
+                    </div>
+                    <div class="back">
+                      <p>
+                        2eme projet d'étude lors de ma formation de developpeur
+                        web.
+                      </p>
+                      <button class="btnProjets">
+                        <a
+                          class="linkProjets"
+                          href="https://wildcodeschool.github.io/2022-09-js-sncf-grp2-p2/">Visite</a>
+                      </button>
+                      <p><b>React / Tailwind</b></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="h3Projets">Kingdom of Colchis</h3>
+                <div class="card">
+                  <div class="content">
+                    <div class="front">
+                      <img
+                        src="assets/documents/Realisation/Royal Kingdom of Colchis.png"
+                        alt="Royal Kingdom of Colchis"
+                        class="imgProjet"
+                      />
+                    </div>
+                    <div class="back">
+                      <p>
+                        1er projet web réalisé en HTML / CSS juste avent ma
+                        formation de developpeur web.
+                      </p>
+                      <button class="btnProjets">
+                        <a class="linkProjets" href="https://y5qlgb.csb.app/">Visite</a>
+                      </button>
+                      <p><b>HTML / CSS / JavaScript</b></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="h3Projets">Projet incoming !</h3>
+                <div class="card">
+                  <div class="content">
+                    <div class="front">
+                      <img
+                        src="assets/documents/Realisation/incoming.png"
+                        alt="incoming.png"
+                        class="imgProjet"
+                      />
+                    </div>
+                    <div class="back">
+                      <p>Projet en cours de création !</p>
+                      <p>
+                        <b
+                          >Back : Express / NodeJS<br />
+                          Front : React / Bootstrap</b
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section id="skills">
+          <h1 class="h1Title">Skills</h1>
+          <article class="langages">
+            <h2>Languages</h2>
+            <div class="contnairLangages">
+              <img
+                src="assets/logo/html5.png"
+                class="langague"
+                alt="logo HTML"
+              />
+              <img src="assets/logo/js.png" class="langague" alt="logo JS" />
+              <img src="assets/logo/css3.png" class="langague" alt="logo CSS" />
+              <br />
+              <img
+                src="assets/logo/Express.png"
+                class="langague"
+                alt="logo express"
+              />
+              <img
+                src="assets/logo/nodeJS1.png"
+                class="langague"
+                alt="logo JS"
+              />
+              <img src="assets/logo/react.png" class="langague" alt="logo JS" />
+
+              <div class="langageCSS"></div>
+            </div>
+          </article>
+          <hr />
+          <article class="CV">
+            <h2>CV</h2>
+            <button
+              onclick="window.location.href='assets/documents/CvPDF.pdf';"
+              class="CV"
+            >
+              Télecharger mon CV
+            </button>
+          </article>
+        </section>
+
+        <section id="contact">
+          <h1>Contact</h1>
+          <article>
+            <p>bobon.damien@gmail.com</p>
+          </article>
+        </section>
+      </main>
     </div>
-  </header>
-<div class="contnairCenter">
-  <main>
-    <a href="#presentation" class="anchorLink"><img src="assets/logo/top.svg" alt="" class="anchorTop"></a>
-    <section >
-      <h1>Présentation</h1>
-      <article>
-        <h2 class="h2MobileScreen">Qui je suis ?</h2>
-        <div class="contnairTextImg">
-          <div class="imgArticle">
-            <img src="assets/documents/coding-man.jpg" alt="Un homme qui code">
-          </div>
-          <div class="descriptionArticle">
-            <h2 class="h2LargeScreen">Qui je suis ?</h2>
-            <div class="pArticle">
-
-              <p>Bienvenue sur mon portfolio en ligne ! 
-
-                Ici vous pourrez découvrir mes créations de sites web et mes projets de développement personnel. 
-                
-                J'ai travaillé sur une variété de projets, allant des sites web élégants et professionnels pour les entreprises, aux projets de développement créatifs et passionnants.
-                
-                ﻿ Naviguez à travers mon portfolio
-                
-                pour voir mes réalisations et n'hésitez pas à me contacter .
-              </p>
-            </div>
-
-          </div>
-        </div>
-      </article>
-    </section>
-    <section id="achievement">
-      <article >
-        <h1>Réalisations</h1>
-        <h2 class="h2MobileScreen">Tel Ext PDL</h2>
-        <div class="contnairTextImg reverse">
-          <div class="imgArticle">
-            <img class="imgAchivement" src="assets/documents/Realisation/1erProjet.PNG" alt="Image de la 1er réalisation">
-          </div>
-          <div class="descriptionArticle">
-            <h2 class="h2LargeScreen">Tel Ext PDL</h2>
-            <div class="pArticle">
-              
-                <p> <b>Language de programmation : PowerApps</b></p>
-              <br>
-              Petite application servant au rescensement des téléphones de voie. <br>
-              Cette application dispose de fonctionnalités de filtre ainsi que de mise en favoris.
-            </div>
-          </div>
-        </div>
-      </article>
-      <article>
-        <div class="separatorArticle"></div>
-        <h2 class="h2MobileScreen">PDL Carnot GSL</h2>
-        <div class="contnairTextImg">
-          <div class="imgArticle">
-            <img class="imgAchivement" src="assets/documents/Realisation/2emeProjet.PNG" alt="Image de la 1er réalisation">
-          </div>
-          <div class="descriptionArticle">
-            <h2 class="h2LargeScreen">PDL Carnot GSL</h2>
-            <div class="pArticle">
-              <p><b>Langague de programmation : PowerApps</b></p>
-              <p>Application de gestion des stock informatique du site Carnot à Nantes, permet de réaliser des
-                inventaires du matériel informatique, d'en affecter à des agents sous forme de panier et de conserver un
-                historique des affectations.</p>
-            </div>
-          </div>
-        </div>
-      </article>
-      <div class="separatorArticle"></div>
-      <article>
-        <h2 class="h2MobileScreen">Kingdom of Colchis</h2>
-        <div class="contnairTextImg reverse">
-          <div class="imgArticle">
-            <img class="imgAchivement" src="assets/documents/Realisation/3emeProjet.PNG" alt="Image de la 3eme réalisation">
-          </div>
-          <div class="descriptionArticle">
-            <h2 class="h2LargeScreen">The Kingdom of Kolchis</h2>
-            <div class="pArticle">
-              <p><b>Langague de programmation : HTML, CSS, JavaScript</b></p>
-              <p>Site réaliser dans le cadre du processus de selection de la wild code scool avec un wireframe, il
-                présente le royame de conchis avec différente page, ainsi qu'un formulaire de contacte.</p>
-            </div>
-          </div>
-        </div>
-      </article>
-    </section>
-    <section id="CV">
-      <article class="CV">
-        <h1>Mon CV</h1>
-        <div class="contnairCV">
-          <div>
-            <img class="imgArticleCV imgAchivement" src="assets/documents/Cv.jpg" alt="image de mon CV">
-          </div>
+    <footer>
+      <div class="btnSocial marginFooter">
+        <a href="https://www.linkedin.com/in/damien-bobon-063482179/"
+          ><img
+            src="assets/logo/linkedin.svg"
+            class="btnSocial"
+            alt="logo de linkedin"
+        /></a>
+        <a href="mailto:bobon.damien.wcs@gmail.com"
+          ><img
+            src="assets/logo/email.svg"
+            class="btnSocial"
+            alt="logo d'email"
+        /></a>
+        <a href="https://github.com/DamDamWCS"
+          ><img
+            src="assets/logo/github.svg"
+            class="btnSocial"
+            alt="logo de GitHub"
+        /></a>
       </div>
-        <button onclick="window.location.href='assets/documents/CvPDF.pdf';" class="CV">Télecharger en PDF</button>
-      </article>
-    </section>
-    <section id="contact">
-      <article>
-        <h1>Contact</h1>
-        <p class="pArticle ">Démarrons un projet ensemble, n'hesitez pas à me contacter</p>
+      <div class="separatorFooter marginFooter"></div>
 
-        <form class="contactForm">
-          <br>
-          <input type="text" id="nameForm" name="name" class="boxForm" placeholder="Votre nom" required>
-          <br>
-          <br>
-          <input type="email" class="boxForm" id="emailForm" name="email" placeholder="votre-email@exemple.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
-          <br>
-          <br>
-          <textarea id="messageForm" name="message" class="boxForm" placeholder="Votre message" required></textarea>
-          <br>
-          <br>
-            <input type="submit" value="Envoyer" class="submitContact">
-        </form>
-      </article>
-    </section>
-    <div class="separatorSectionLast"></div>
-  </main>
-</div>
-  <footer>
-    <div class="btnSocial marginFooter">
-      <a href="https://www.linkedin.com/in/damien-bobon-063482179/"><img src="assets/logo/linkedin.svg"
-          class="btnSocial" alt="logo de linkedin"></a>
-      <a href="mailto:bobon.damien.wcs@gmail.com"><img src="assets/logo/email.svg" class="btnSocial"
-          alt="logo d'email"></a>
-      <a href="https://github.com/DamDamWCS"><img src="assets/logo/github.svg" class="btnSocial"
-          alt="logo de GitHub"></a>
-    </div>
-    <div class="separatorFooter marginFooter"></div>
-    <div class="copyrightText marginFooter">© 2022 Damien BOBON</div>
-    <img class="imgLogo marginFooter" src="assets/logo/logo.svg" alt="logo du site">
-  </footer>
-    <!-- Fenetre popup -->
-<div class="popup">
-  <span class="close">&times;</span>
-  <img class="popupContent">
-</div>
-  <script src="JS/script.js"></script>
-
-</body>
-
+      <img
+        class="imgLogo marginFooter"
+        src="assets/logo/wolf7.png"
+        alt="logo du site"
+      />
+      <div class="copyrightText marginFooter">© 2022 Damien BOBON</div>
+    </footer>
+    <script src="JS/script.js"></script>
+  </body>
 </html>
