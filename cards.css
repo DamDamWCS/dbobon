@@ -78,6 +78,7 @@
 }
 
 .back {
+  padding: 0 10px;
   background: #361d25;
   color: white;
   transform: rotateY(180deg);
