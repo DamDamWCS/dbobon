@@ -55,7 +55,6 @@ hr {
 h1 {
   font-weight: normal;
   margin: 0px;
-  /* padding-top: 125px; */
   font-family: "Montez", cursive;
   font-size: 5em;
   color: #dc4c20;
@@ -106,10 +105,6 @@ article {
   border-radius: 100%;
   filter: drop-shadow(1px 1px 3px rgb(0 0 0));
 }
-/* section#achievement,
-section#contact {
-  background-color: #f9f9f9;
-} */
 .boxShadowBotom {
   height: 85px;
   display: flex;
@@ -144,17 +139,13 @@ section#contact {
   position: absolute;
   top: 85px;
   right: 0;
-  transform: translateX(
-    101%
-  ); /*par défaut le conteneur des liens de navigations sont cachés en dehors de l'écran*/
+  transform: translateX(101%);
   transition: all 0.5s ease-in-out;
   padding-inline-start: 0;
   list-style: none;
 }
 .navbarLink {
-  transform: translateX(
-    101%
-  ); /*par défaut les liens de navigations sont cachés en dehors de l'écran*/
+  transform: translateX(101%);
   display: block;
   width: 100%;
   text-align: center;
@@ -181,7 +172,7 @@ section#contact {
   font-family: "Amarante";
   text-decoration: none;
   color: #ca574f;
-  border: 1px solid #1392e100; /*rajout d'un border d'1px transparant pour ne plus décaler le menu au over */
+  border: 1px solid #1392e100;
 }
 .navbarLink > a:hover {
   background-color: #ca574f;
@@ -215,7 +206,6 @@ section#contact {
   border-color: #000000;
 }
 .imgLogo {
-  /*Modification du logo SVG pour la coleur orange et l'application d'un drop shadow*/
   filter: invert(53%) sepia(33%) saturate(5154%) hue-rotate(344deg)
     brightness(100%) contrast(102%) drop-shadow(0px 5px 5px rgb(0 0 0));
   max-height: 85px;
@@ -231,28 +221,6 @@ section#contact {
   filter: invert(53%) sepia(33%) saturate(5154%) hue-rotate(344deg)
     brightness(100%) contrast(102%) drop-shadow(0px 5px 5px rgb(0 0 0));
 }
-
-/*Style des sections*/
-.contnairTextImg {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contact p {
-  padding: 0;
-  text-align: center;
-  font-style: italic;
-}
-.imgArticle > img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 1%;
-  border: 1px solid #606060;
-  max-width: 700px;
-}
-
 /* Article langage  */
 .contnairLangages {
   display: flex;
@@ -265,11 +233,6 @@ section#contact {
 .langague {
   padding: 10px;
   width: 100px;
-}
-
-a.CV {
-  text-decoration: initial;
-  color: white;
 }
 button.CV:hover {
   background: #d4625a;
@@ -292,49 +255,6 @@ button.CV {
   cursor: pointer;
 }
 
-/*Style de la section contact*/
-.contact {
-  padding: 20px 0 10px 0;
-}
-.email {
-  padding-bottom: 5px;
-}
-.boxForm {
-  width: 100%;
-  border: 1px solid #7a7a7a;
-  border-radius: 2%;
-  padding: 10px;
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: #60606093;
-}
-input,
-textarea {
-  color: #606060;
-  font-size: 18px;
-  font-family: "SourceSansPro";
-}
-textarea {
-  height: 150px;
-}
-.submitContact {
-  margin-top: 10px;
-  width: 100%;
-  height: 40px;
-  padding: 0px 10px 0px 10px;
-  background: #737474;
-  color: #ffffff;
-  border: black 1px solid;
-  border-radius: 3px;
-  font-size: 18px;
-  letter-spacing: 1px;
-}
-.submitContact:hover {
-  background: #737474e0;
-  cursor: pointer;
-}
 /* Toggle menu */
 .burger {
   display: block;
@@ -401,6 +321,13 @@ textarea {
 }
 
 /*Style du footer*/
+.separatorFooter {
+  display: block;
+  width: 200px;
+  height: 1px;
+  background-color: #747475;
+  margin: 0 auto;
+}
 footer {
   display: flex;
   flex-direction: column;
@@ -438,61 +365,6 @@ img.btnSocial:hover {
   text-align: center;
   padding: 0;
 }
-/*POPUP*/
-/* Modification du curseur de la souris en style pointer */
-.imgAchivement {
-  cursor: pointer;
-}
-.popup {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.9);
-}
-/*Contenu de la popup (Image) */
-.popupContent {
-  margin: auto;
-  display: block;
-  width: 100%;
-}
-/*Animation de l'affichage du contenu de la popup*/
-.popupContent {
-  width: 100%;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-/*Key frame décrivant l'animation avec l'odre d'animation*/
-@keyframes zoom {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-/* bouton de fermeture de la popup */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
 /* SCREEN LARGE */
 @media screen and (min-width: 745px) {
   .navbarLink.first {
@@ -501,16 +373,6 @@ img.btnSocial:hover {
   .logo {
     min-width: 200px;
     justify-content: space-evenly;
-  }
-  section {
-    /* padding: 100px 10px; */
-  }
-  /* h1 {
-    padding: 0 0 75px 0;
-  } */
-
-  .contnairCV {
-    padding-bottom: 75px;
   }
   .titleLogo {
     display: initial;
@@ -536,7 +398,7 @@ img.btnSocial:hover {
     justify-content: center;
     align-items: center;
     transform: none;
-    height: 95px; /*hauteur du header pour la visu de l'effet box-shadow*/
+    height: 95px;
     width: 100%;
     position: initial;
     padding: 0px 5px;
@@ -559,37 +421,5 @@ img.btnSocial:hover {
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
     color: white;
     border-radius: 5px;
-  }
-  .h2LargeScreen {
-    display: initial;
-  }
-  .h2MobileScreen {
-    display: none;
-  }
-  .descriptionArticle {
-    /* max-width: 40%; */
-    padding: 15px;
-    align-items: center;
-  }
-  .contnairTextImg {
-    flex-direction: initial;
-    justify-content: space-evenly;
-  }
-  .reverse {
-    flex-direction: row-reverse;
-  }
-  form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .boxForm,
-  .submitContact {
-    width: 600px;
-  }
-  .separatorArticle {
-    margin: 100px auto 100px auto;
-    border: initial;
   }
 }
